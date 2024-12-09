@@ -41,9 +41,9 @@ host=universe
 
 # Update the persistent git checkout and find the most recent tag
 pushd "${git_dir}" >/dev/null 2>&1
-git checkout main
+git checkout fixes_0.1.5 # main
 git fetch --tags
-git rebase origin/main
+git rebase origin/fixes_0.1.5 # main
 git remote prune origin
 latest=$(git describe --tags $(git rev-list --tags --max-count=1))
 popd >/dev/null 2>&1
