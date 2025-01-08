@@ -29,7 +29,7 @@ requirements:
     - libgomp # [linux]
     - libopenblas * *openmp*
     - libblas * *openblas
-    - cfitsio
+    - cfitsio <4.5
     - wcslib
     - libactpol_deps
     # Remove until this perl bug is fixed
