@@ -39,7 +39,7 @@ requirements:
     - llvm-openmp # [osx]
     - libopenblas * *openmp*
     - libblas * *openblas
-    - {{ pin_compatible("cfitsio") }}
+    # - {{ pin_compatible("cfitsio") }}
     - {{ pin_compatible("libopenblas") }}
     - {{ pin_compatible("libblas") }}
     - {{ pin_compatible("libactpol_deps") }}
